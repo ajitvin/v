@@ -48,3 +48,17 @@ set smartcase                   " ... unless they contain at least one capital l
 
 set colorcolumn=80             " have a line showing coloumn boundary
 
+
+"""""""" Nirvana starts on Aug 14
+:map <F8> :let @@=expand('<cword>')<CR>
+"Map for vimgrep just keep it over the word then press coma to search in
+"vimgrep "
+nmap , :vimgrep /\<<C-R>=expand("<cword>")<CR>\>/ ./**/*.[ch]
+
+set tabstop=4 shiftwidth=4 expandtab
+
+" Remove backup ~ files
+set nobackup
+
+" Igonre case while searching
+set ic
