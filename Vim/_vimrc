@@ -62,3 +62,8 @@ set nobackup
 
 " Igonre case while searching
 set ic
+
+"FONT
+set guifont=Consolas:h10
+"set guifont=Consolas:h11
+
