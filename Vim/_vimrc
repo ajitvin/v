@@ -67,3 +67,38 @@ set ic
 set guifont=Consolas:h10
 "set guifont=Consolas:h11
 
+"Ctags
+set tags=./tags,tags;$HOME
+
+"colorscheme - Solarized
+" syntax enable "already enabled
+set background=dark "light or dark
+"disable the solarised menu
+let g:solarized_menu=0
+"solarised color scheme. put the scheme in the colors folder
+colorscheme solarized
+
+
+" Removes trailing spaces in files
+"autocmd BufWritePre *.py normal m`:%s/\s\+$//e
+``
+"autocmd BufWritePre *.txt normal m`:%s/\s\+$//e
+``
+"autocmd BufWritePre *.c normal m`:%s/\s\+$//e
+``
+"autocmd BufWritePre *.h normal m`:%s/\s\+$//e
+``
+
+"F11 map
+"1.	convert all tab to 4 spaces and 
+"2.	remove trailing spaces
+nmap <F11> :%s/\t/    /g <bar> :%s/\s\+$//
+
+"F12 map
+"1.	convert all tab to 4 spaces and 
+"2.	remove trailing spaces
+"3.	save and exit
+nmap <F12> :%s/\t/    /g <bar> :%s/\s\+$//<bar> :wq<CR>
+
+"nmap <F12> :source c:\Program Files (x86)\Vim\_vimrc_vmp
+
