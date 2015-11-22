@@ -50,6 +50,8 @@ set colorcolumn=80             " have a line showing coloumn boundary
 
 
 """""""" Nirvana starts on Aug 14
+"show line number
+set number
 :map <F8> :let @@=expand('<cword>')<CR>
 "Map for vimgrep just keep it over the word then press coma to search in
 "vimgrep "
@@ -72,7 +74,7 @@ set tags=./tags,tags;$HOME
 
 "colorscheme - Solarized
 " syntax enable "already enabled
-set background=dark "light or dark
+set background=light "light or dark
 "disable the solarised menu
 let g:solarized_menu=0
 "solarised color scheme. put the scheme in the colors folder
