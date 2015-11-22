@@ -106,3 +106,9 @@ nmap <F12> :%s/\t/    /g <bar> :%s/\s\+$//<bar> :wq<CR>
 
 "Pathogen plugin manager enable
 execute pathogen#infect()
+
+"NERDTree
+nmap <F8> :NERDTree<CR>
+
+"TagbarToggle
+nmap <F9> :TagbarToggle<CR>
