@@ -102,3 +102,5 @@ nmap <F12> :%s/\t/    /g <bar> :%s/\s\+$//<bar> :wq<CR>
 
 "nmap <F12> :source c:\Program Files (x86)\Vim\_vimrc_vmp
 
+"Pathogen plugin manager enable
+execute pathogen#infect()

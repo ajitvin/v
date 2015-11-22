@@ -1,0 +1,1 @@
+Just put the plugins into this directory. The pathogen plugin will load plugins into the vim runtime.
