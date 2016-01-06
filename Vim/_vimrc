@@ -52,6 +52,7 @@ set colorcolumn=80             " have a line showing coloumn boundary
 """""""" Nirvana starts on Aug 14
 "show line number
 set number
+
 :map <F8> :let @@=expand('<cword>')<CR>
 "Map for vimgrep just keep it over the word then press coma to search in
 "vimgrep "
@@ -78,7 +79,8 @@ set background=light "light or dark
 "disable the solarised menu
 let g:solarized_menu=0
 "solarised color scheme. put the scheme in the colors folder
-colorscheme solarized
+"colorscheme solarized
+
 
 
 " Removes trailing spaces in files
@@ -112,3 +114,27 @@ nmap <F8> :NERDTree<CR>
 
 "TagbarToggle
 nmap <F9> :TagbarToggle<CR>
+
+" Key (re)Mappings {
+"The default leader is '\\', but many people prefer ',' as it's in a standard
+"location
+"let mapleader = ','
+
+" Making it so ; works like : for commands. Saves typing and
+"eliminates :W style typos due to lazy holding shift.
+" nnoremap ; :
+
+" Easier moving in tabs and windows
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+map <C-K> <C-W>k<C-W>_
+
+" Stupid shift key fixes
+cmap W w                        
+cmap WQ wq
+cmap wQ wq
+cmap Q q
+cmap Tabe tabe
+
+
